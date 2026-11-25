@@ -60,8 +60,13 @@ public class Stack<E> implements StackInterface<E>
         return head.value;
     }
     
-        public boolean isEmpty() {
-        return false;
+    /**
+     * Returns true if the stack is empty and false otherwise.
+     * 
+     * @return true if stack is empty and false otherwise.
+     */
+    public boolean isEmpty() {
+        return (head == null);
     }
     
     public void clear() {
