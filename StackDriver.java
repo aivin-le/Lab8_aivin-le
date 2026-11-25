@@ -13,10 +13,12 @@ public class StackDriver
         
         stack1.push("Hello");
         stack1.push("World!");
+        if(stack1.peek().equals("World!")) score++;
         if(stack1.pop().equals("World!")) score++;
+        if(stack1.peek().equals("Hello")) score++;
         if(stack1.pop().equals("Hello")) score++;
         
-        maxScore += 2;
+        maxScore += 4;
         
         System.out.println("Earned " + score + " out of " + maxScore + " points.");
     }
