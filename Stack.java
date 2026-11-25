@@ -51,11 +51,16 @@ public class Stack<E> implements StackInterface<E>
         return (E) popThis.value;
     }
     
+    /**
+     * Returns an element from the top of the stack without removing it.
+     * 
+     * @return the element at the top of the stack.
+     */
     public E peek() {
-        return null;
+        return head.value;
     }
     
-    public boolean isEmpty() {
+        public boolean isEmpty() {
         return false;
     }
     
