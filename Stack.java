@@ -110,6 +110,16 @@ public class Stack<E> implements StackInterface<E>
      * @return the String representation of the stack.
      */
     public String toString() {
-        return "";
+        StringBuffer output = new StringBuffer();
+        if(head != null) {
+            output.append(head.value);
+            Node finger = head.next;
+            while(finger != null) {
+                output.append(" ");
+                output.append(finger.value);
+                finger = finger.next;
+            }
+        }
+        return output.toString();
     }
 }
