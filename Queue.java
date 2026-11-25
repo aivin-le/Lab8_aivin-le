@@ -30,7 +30,12 @@ public class Queue<E> implements QueueInterface<E>
     }
     
     public void enqueue(E element) {
-        //
+        if(head == null) {
+            head = new Node(element, null);
+            tail = head;
+        } else{
+            tail.next = new Node(element, null);
+        }
     }
     
     public E getFront() {
