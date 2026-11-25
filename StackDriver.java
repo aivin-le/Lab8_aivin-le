@@ -12,6 +12,7 @@ public class StackDriver
         int maxScore = 0;
         
         if(stack1.isEmpty()) score++;
+        if(stack1.toString().equals("")) score++;
         stack1.push("Hello");
         stack1.push("World!");
         if(stack1.search("Hello") == 2) score ++;
