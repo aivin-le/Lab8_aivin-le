@@ -28,4 +28,24 @@ public class Queue<E> implements QueueInterface<E>
         head = null;
         tail = null;
     }
+    
+    public void enqueue(E element) {
+        //
+    }
+    
+    public E getFront() {
+        return null;
+    }
+    
+    public boolean isEmpty() {
+        return false;
+    }
+    
+    public void clear() {
+        //
+    }
+    
+    public E dequeue() {
+        return null;
+    }
 }
